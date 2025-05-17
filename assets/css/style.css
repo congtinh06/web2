@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  font-family: "poppins", sans-serif;
+  z-index: -1;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  font-family: "poppins", sans-serif;
+}
+.body {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 41px 0;
+  background: rgba(208, 233, 162, 0.793);
+}
+.nav ul {
+  display: flex;
+  gap: calc(2rem + 1vw);
+}
+.header .logo {
+  padding: 0 205px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.nav a {
+  color: #171100;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.67;
+  padding: 0px 10px;
+  font-family: var(--font-family);
+}
+.nav a:hover {
+  color: #2b25da96;
+  font-weight: 600;
+  bottom: 0;
+  position: relative;
+}
+.nav a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: red;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
+}
+.nav a:hover::after {
+  width: 100%;
+  min-width: calc(100% - 48px);
+}
+.header .action {
+  display: flex;
+  gap: 34px;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: calc(100% -48px);
+}
+.header .action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .action .sign-in {
+  color: gray;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.67;
+  font-family: var(--font-family);
+  padding: 8px;
+}
+.header .action .sign-in:hover {
+  color: #2b25da96;
+  font-weight: 600;
+  bottom: 0;
+}
+.header .action .sign-up button {
+  gap: 30px;
+  background-color: rgba(163, 217, 226, 0.1);
+  color: #66cee8;
+  font-weight: 600;
+  border: solid 1px #13acd2;
+  border-radius: 12px 12px 12px 12px;
+  padding: 12px 20px;
+}
+
+.header .action .sign-up button:hover {
+  cursor: pointer;
+  object-fit: cover;
+  box-shadow: 0px 0 0 0.5px transparent;
+  color: #171100;
+}
+/*  */
